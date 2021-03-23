@@ -61,4 +61,12 @@ public class MainController {
 		redirectView.setUrl(request.getContextPath() + "/");
 		return redirectView;
 	}
+	
+	@RequestMapping("/update/{medicineId}")
+	public String updateForm(@PathVariable("medicineId") int pid,Model model)
+	{
+		Medicine medicine = this.pharmacyDao.getMedicine(pid);
+		model.addAttribute("medicine",medicine);
+		return "update-form";
+	}
 }
