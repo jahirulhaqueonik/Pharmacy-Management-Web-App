@@ -1,30 +1,30 @@
-<!DOCTYPE web-app PUBLIC
- "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
- "http://java.sun.com/dtd/web-app_2_3.dtd" >
+<?xml version="1.0"?>
 
-<web-app>
-  <display-name>Archetype Created Web Application</display-name>
-  
-  <!-- Configure Dispatcher servlet -->
-  
-  <servlet>
-  		<servlet-name>spring</servlet-name>
-  		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-    </servlet>
-  <servlet>
-  	<servlet-name>Login</servlet-name>
-  	<display-name>Login</display-name>
-  	<description></description>
-  	<servlet-class>Login</servlet-class>
-  </servlet>
-    
-    <servlet-mapping>
-    	<servlet-name>spring</servlet-name>
-    	<url-pattern>/</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-    	<servlet-name>Login</servlet-name>
-    	<url-pattern>/Login</url-pattern>
-    </servlet-mapping>
-  
+<!DOCTYPE web-app SYSTEM "http://java.sun.com/dtd/web-app_2_3.dtd" PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN">
+
+-<web-app>
+
+<display-name>Archetype Created Web Application</display-name>
+
+<!-- Configure dispatcher servlet -->
+
+
+
+-<servlet>
+
+<servlet-name>spring</servlet-name>
+
+<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+
+</servlet>
+
+
+-<servlet-mapping>
+
+<servlet-name>spring</servlet-name>
+
+<url-pattern>/</url-pattern>
+
+</servlet-mapping>
+
 </web-app>
