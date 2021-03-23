@@ -37,7 +37,7 @@
 				  		<td>${p.expDate }</td>
 				  		<td>
 				  			<a href="delete/${p.id }"><i class="far fa-trash-alt text-danger" style="font-size: 25px;"></i></a>
-				  			<a href="update/${p.id }"><i class="fas fa-pen-nib text-danger" style="font-size: 25px;"></i></a>
+				  			<a href="update/${p.id }"><i class="fas fa-pen-nib text-primary" style="font-size: 25px;"></i></a>
 				  		</td>
 				  	</tr>
 				  	</c:forEach>
