@@ -20,7 +20,8 @@ public class PharmacyDao {
 	@Transactional
 	public void createMedicine(Medicine medicine)
 	{
-		this.hibernateTemplate.save(medicine);
+		
+		this.hibernateTemplate.saveOrUpdate(medicine);
 	}
 	
 	//get all products
